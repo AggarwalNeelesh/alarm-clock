@@ -11,9 +11,9 @@
             <div class="image">
                 <img src="alarm-clock.png" alt="alarm-clock">
             </div>
-            <h1 id="clock">04:37:23 PM</h1>
+            <h1 id="clock"></h1>
             <div class="set">
-                <select name="hour" id="hour">
+                <select name="hour" id="hours">
                     <option value="01">01</option>
                     <option value="02">02</option>
                     <option value="03">03</option>
@@ -89,12 +89,12 @@
                     <option value="59">59</option>
                 </select>
                 <select name="ampm" id="ampm">
-                    <option value="am">AM</option>
-                    <option value="pm">PM</option>
+                    <option value="PM">PM</option>
+                    <option value="AM">AM</option>
                 </select>
             </div>
-            
-            <button id="btn">Create Alarm</button>
+            <h2 id="alarm"></h2>
+            <button onclick="setAlarm()" id="btn">Create Alarm</button>
     </div>
     <script src="index.js"></script>
 </body>
