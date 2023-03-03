@@ -14,6 +14,7 @@
             <h1 id="clock"></h1>
             <div class="set">
                 <select name="hour" id="hours">
+                    <option value="00">00</option>
                     <option value="01">01</option>
                     <option value="02">02</option>
                     <option value="03">03</option>
@@ -28,6 +29,7 @@
                     <option value="12">12</option>
                 </select>
                 <select name="minute" id="minute">
+                    <option value="00">00</option>
                     <option value="01">01</option>
                     <option value="02">02</option>
                     <option value="03">03</option>
@@ -89,12 +91,13 @@
                     <option value="59">59</option>
                 </select>
                 <select name="ampm" id="ampm">
-                    <option value="PM">PM</option>
                     <option value="AM">AM</option>
+                    <option value="PM">PM</option>
                 </select>
             </div>
             <h2 id="alarm"></h2>
-            <button onclick="setAlarm()" id="btn">Create Alarm</button>
+            <button class="btn" id="setAlarm">Create Alarm</button>
+            <button class="btn" id="stopAlarm" hidden>Reset Alarm</button>
     </div>
     <script src="index.js"></script>
 </body>
